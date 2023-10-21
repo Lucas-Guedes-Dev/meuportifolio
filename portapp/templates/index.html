@@ -19,10 +19,10 @@
                 <img src="{% static 'images/Lucas guedes.png' %}" height="100%"/>
             </div>
             <div class="navbar-item-meio">
-                <button class="button-navbar">Home</button>
-                <button class="button-navbar">Sobre</button>
-                <button class="button-navbar">Portfolio</button>
-                <button class="button-navbar">Contato</button>
+                <a class="button-navbar">Home</a>
+                <a class="button-navbar">Sobre</a>
+                <a class="button-navbar" href="{% url 'index' %}">Portfolio</a>
+                <a class="button-navbar" href="{% url 'contato' %}">Contato</a>
             </div>
             <div class="navbar-item-direita">
                 <a class="button-icones" href="https://www.instagram.com/_lucassguedes/">
@@ -34,12 +34,62 @@
                 <a class="button-icones" href="https://www.linkedin.com/in/lucas-guidolin-guedes/">
                     <img src="{% static 'images/linkedin.png' %}" width="70%" height="70%"/>
                 </a>
+                <a class="button-icones" href="https://github.com/Lucas-Guedes-Dev">
+                    <img src="{% static 'images/githubp.png' %}" width="70%" height="70%"/>
+                </a>
             </div>
         </div>
         
         <div class="body-scroll">
             {% block body %}{% endblock %}
+
+            <div class="footer-page">
+                <div class="section-footer-1">
+                    <div class="content-titulo-footer">
+                        <h1>Lucas Guedes</h1>
+                        <h3>Desenvolvedor</h3>
+                    </div>
+                    
+                    <div class="content-contato-footer">
+                        
+                        <div class="linha-contato-footer">
+                            <span class="material-symbols-outlined">
+                                language
+                            </span>
+                            <label>www.site.lucasguedes.com</label>
+                        </div>
+                        <div class="linha-contato-footer">
+                            <span class="material-symbols-outlined">
+                                call
+                            </span>
+                            <label>+55 (41)98850-9779</label>
+                        </div>
+                        <div class="linha-contato-footer">
+                            <span class="material-symbols-outlined">
+                                mail
+                            </span>
+                            <label>lucas_guidolinguedes@outlook.com</label>
+                        </div>
+                        <div class="linha-contato-footer">
+                            <span class="material-symbols-outlined">
+                                location_on
+                            </span>
+                            <label>Curitiba, Paraná - Brasil</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-footer-2">
+                    <div class="retangulo-foto" >
+                        <img src="{% static 'images/eu.png'%}" class="image-footer"/>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="footer-footer">
+            </div>
         </div>
+
+        
     </body>
     {% block scripts %}{% endblock %}
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>

@@ -2,6 +2,7 @@
 body{
     overflow: hidden !important;
     font-size: 1.5vw !important;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 /* NAVBAR */
@@ -28,7 +29,7 @@ body{
 }
 
 .navbar-item-meio{
-    flex: 1;
+    flex: 1.5;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -53,6 +54,10 @@ body{
     border-width: 0;
     color: white;
     font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
 }
 
 .button-navbar:hover{
@@ -61,7 +66,7 @@ body{
 }
 
 .button-icones{
-    margin-inline: 20px;
+    margin-inline: 5px;
 }
 
 /* BODY SCROLL */
@@ -157,6 +162,7 @@ body{
 
 .gallery {
     margin-bottom: 3%;
+    background: rgba(244, 236, 223, 0.153);
 }
 
 .gallery-cell {
@@ -167,7 +173,11 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgba(244, 236, 223, 0.153);
+    background: rgba(255, 255, 255, 0.753);
+}
+
+.dot{
+    background: #f4ecdf !important;
 }
 
 /* footer */
@@ -274,8 +284,76 @@ body{
 
 /* descricao pessoal */
 
-.descricao-pessoal{
+.section{
     width: 100%;
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+.section-transparent{
+    width: 98%;
+    height: 95%;
+    background: rgba(244, 236, 223, 0.153);
+    border-radius: 8px;
+    box-shadow: 2px 2px 4px 4px rgba(0, 0, 0, 0.245);
+}
+
+.section-form{
+    width: 50%;
+    height: 70%;
+    background: rgba(244, 236, 223, 0.153);
+    border-radius: 8px;
+    box-shadow: 2px 2px 4px 4px rgba(0, 0, 0, 0.245);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-form input{
+    display: flex;
+    flex: 1;
+    background-color: #9E9C9D;
+    border-radius: 8px;
+    border: 0px;
+    padding: 5px;
+}
+
+.section-form input:focus{
+    background-color: white;
+    border: 0px;
+}
+
+.section-form input:hover{
+    background-color: white;
+}
+.section-form label{
+    display: flex;
+    flex: 1;
+    color: rgb(230, 230, 230);
+    font-size: 12px;
+    font-weight: bold;
+}
+.section-form button{
+    width: 100%;
+    background-color: #192436;
+    color: white;
+    border: 0px;
+    padding: 5px;
+    border-radius: 8px;
+}
+.checkbox-ativo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.checkbox-ativo label{
+    flex: 5;
+}
+.checkbox-ativo input{
+    flex: 1;
+    width: 13px;
+    height: 13px;
+}
