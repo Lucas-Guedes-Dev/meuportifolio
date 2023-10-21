@@ -1,0 +1,87 @@
+{% extends '../index.html' %}
+
+{% load static %}
+
+{% block body %}
+
+    <div class="div-init">
+        <div class="div-init-info">
+            <div class="div-init-info-titulo">
+                <h1>Lucas Guidolin Guedes</h1>
+            </div>
+            <div class="div-init-info-corpo">
+                <p>
+                    Desenvolvedor Front-end e Back-end com mais de 4 anos de experiência em desenvolvimento de software.
+                </p>
+            </div>
+           
+        </div>
+    </div>
+
+    <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
+        <div class="gallery-cell"></div>
+        <div class="gallery-cell"></div>
+        <div class="gallery-cell"></div>
+        <div class="gallery-cell"></div>
+        <div class="gallery-cell"></div>
+        <div class="gallery-cell"></div>
+        <div class="gallery-cell"></div>
+
+        <div class="gallery-cell"></div>
+    </div>  
+    
+    <div class="descricao-pessoal">
+
+    </div>
+
+    <div class="carousel-empresas">
+
+    </div>
+    
+    <div class="footer-page">
+        <div class="section-footer-1">
+            <div class="content-titulo-footer">
+                <h1>Lucas Guedes</h1>
+                <h3>Desenvolvedor</h3>
+            </div>
+            
+            <div class="content-contato-footer">
+                
+                <div class="linha-contato-footer">
+                    <span class="material-symbols-outlined">
+                        language
+                    </span>
+                    <label>www.site.lucasguedes.com</label>
+                </div>
+                <div class="linha-contato-footer">
+                    <span class="material-symbols-outlined">
+                        call
+                    </span>
+                    <label>+55 (41)98850-9779</label>
+                </div>
+                <div class="linha-contato-footer">
+                    <span class="material-symbols-outlined">
+                        mail
+                    </span>
+                    <label>lucas_guidolinguedes@outlook.com</label>
+                </div>
+                <div class="linha-contato-footer">
+                    <span class="material-symbols-outlined">
+                        location_on
+                    </span>
+                    <label>Curitiba, Paraná - Brasil</label>
+                </div>
+            </div>
+        </div>
+        <div class="section-footer-2">
+            <div class="retangulo-foto" >
+                <img src="{% static 'images/eu.png'%}" class="image-footer"/>
+            </div>
+        </div>
+        
+    </div>
+    <div class="footer-footer">
+        
+    </div>
+
+{% endblock  %}
