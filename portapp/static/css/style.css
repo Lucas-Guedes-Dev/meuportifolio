@@ -1,3 +1,4 @@
+
 body{
     overflow: hidden !important;
     font-size: 1.5vw !important;
@@ -18,7 +19,7 @@ body{
 }
 
 .navbar-item-esquerda{
-    flex: 2;
+    flex: 1;
     height: 100%;
     display: flex;
     justify-content: left;
@@ -27,7 +28,7 @@ body{
 }
 
 .navbar-item-meio{
-    flex: 2;
+    flex: 1;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -35,10 +36,10 @@ body{
 }
 
 .navbar-item-direita{
-    flex: 1.3;
+    flex: 1;
     height: 100%;
     display: flex;
-    justify-content: right;
+    justify-content: center;
     align-items: center;
     padding-right: 1%;
 }
@@ -59,6 +60,10 @@ body{
     font-size: 20px;
 }
 
+.button-icones{
+    margin-inline: 20px;
+}
+
 /* BODY SCROLL */
 
 .body-scroll{
@@ -68,6 +73,10 @@ body{
     width: 100%;
     height: 85vh;
     overflow-y: auto;
+    background-image: url("../images/fundo-inicio.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /* Estilo para o scroll vertical */
@@ -96,12 +105,8 @@ body{
 /*  div inicial */
 
 .div-init{
-    height: 76vh;
+    height: 78vh;
     width: 100%;
-    background-image: url("");
-    background-position: center;
-    background-repeat: no-repeat;
-    /* background-color: #0b0e17; */
     display: flex;
 }
 .div-init-info{
@@ -109,9 +114,10 @@ body{
     left: 13%;
     top: 18%;
     width: 25%;
-    height: 65%;
+    height: 60%;
     border-radius: 8px;
     box-shadow: 2px 2px 4px 4px rgba(0, 0, 0, 0.245);
+    background-color: rgba(244, 236, 223, 0.253);
     z-index: 1;
     padding-inline-start: 2%;
     overflow: auto;
@@ -121,16 +127,22 @@ body{
 
 .div-init-info-titulo{
     flex: 1;
+    color: rgb(255, 255, 255);
+    
 }
 
 .div-init-info-corpo{
     flex: 3;
-    padding: 10px
+    padding: 10px;
+}
+
+.div-init-info-corpo p{
+    color: rgb(255, 255, 255);
 }
 
 .div-init-info h1{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: #9e9c9d;
+    color: rgb(255, 255, 255);
 }
 
 .div-init-info p{
@@ -144,28 +156,18 @@ body{
 }
 
 .gallery {
-    background: #EEE;
     margin-bottom: 3%;
 }
 
 .gallery-cell {
-    width: 66%;
-    height: 76vh;
+    width: 30%;
+    height: 45vh;
     margin-right: 10px;
-    background: rgb(210, 210, 210);
-    counter-increment: gallery-cell;
-}
-
-/* cell number */
-.gallery-cell:before {
+    border-radius: 8px;
     display: flex;
-    text-align: center;
     justify-content: center;
     align-items: center;
-    content: counter(gallery-cell);
-    font-size: 80px;
-    color: white;
-    height: 100%;
+    background: rgba(244, 236, 223, 0.153);
 }
 
 /* footer */
