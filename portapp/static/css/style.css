@@ -161,19 +161,25 @@ body{
 }
 
 .gallery {
-    margin-bottom: 3%;
+    width: 100%;
+    height: 100vh;
+
     background: rgba(244, 236, 223, 0.153);
 }
 
 .gallery-cell {
     width: 30%;
-    height: 45vh;
+    height: 45vh !important;
+    top: 30%;
     margin-right: 10px;
     border-radius: 8px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgba(255, 255, 255, 0.753);
+    background: rgb(244, 236, 223);
+}
+.flickity-viewport{
+    height: 100% !important;
 }
 
 .dot{
@@ -188,7 +194,7 @@ body{
     display: flex;
     flex-direction: row;
     background-color: #f4ecdf;
-    
+    margin-top: 15px;
 }
 
 .section-footer-2{
@@ -281,13 +287,16 @@ body{
     height: 5%;
     background-color: #192436;
 }
+.section-gallery{
+    margin-top: 15px;
 
+}
 .section{
     width: 100%;
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 15px;
 }
 
 .section-transparent{
@@ -295,29 +304,38 @@ body{
     flex-direction: column;
     width: 98%;
     height: 95%;
-    background: rgba(244, 236, 223, 0.153);
+    background: rgb(244, 236, 223);
     border-radius: 8px;
     box-shadow: 2px 2px 4px 4px rgba(0, 0, 0, 0.245);
 }
+
 .div-titulo-section{
     flex: 1;
-    background-color: white;
-    color: #192436;
+    background-color: #192436;
+    color: white;
     font-weight: bold;
-    font-size: 32px;
-    max-height: 8%;
-    width: 30%;
+    font-size: 30px;
+    max-height: 10vh;
+    width: 40%;
     margin: 25px;
-    border-radius: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 40px;
+    padding-bottom: 5px;    
 }
 
 .div-descricao-section{
     flex: 3;
     color: #f1f1f1;
     padding-inline: 6%;
+    color: #212a38;
+    font-size: 17px;
+}
+
+.div-descricao-section h3{
+    font-weight: bold;
+    font-size: 22px;
 }
 
 .section-form{
