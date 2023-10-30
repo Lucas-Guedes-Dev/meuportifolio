@@ -5,6 +5,7 @@
 {% block body %}
     <div class="section">
         <div class='section-form'>
+            <h1>Entre em contato</h1>
             <form method="post">
                 {% csrf_token %}
                 <p><label for="{{ form.nome.id_for_label }}">Nome:</label> {{ form.nome }}</p>
@@ -12,6 +13,7 @@
                 <p><label for="{{ form.empresa.id_for_label }}">Empresa:</label> {{ form.empresa }}</p>
                 <p><label for="{{ form.telefone.id_for_label }}">Telefone:</label> {{ form.telefone }}</p>
                 <p class="checkbox-ativo"><label for="{{ form.ativo.id_for_label }}">Posso entrar em contato?</label> {{ form.ativo }}</p>
+                
                 <button type="submit">Enviar</button>
             </form>
         </div>
