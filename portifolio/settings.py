@@ -24,9 +24,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-+rh@1*#bk+k1a_vl4$&+s0p=80+km@o*u*8$-r-5riw$x9ph$k'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-# ALLOWED_HOSTS = ['192.168.0.211']
+ALLOWED_HOSTS = ['192.168.0.93']
 
 
 # Application definition
@@ -123,7 +123,9 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static/css/style.acss')
-
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'portapp', 'static'),
+]
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
