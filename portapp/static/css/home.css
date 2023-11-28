@@ -124,7 +124,7 @@ body{
     box-shadow: 2px 2px 4px 4px rgba(0, 0, 0, 0.245);
     background-color: rgba(244, 236, 223, 0.253);
     z-index: 1;
-    padding-inline-start: 2%;
+    padding-inline-start: 0.8%;
     overflow: auto;
     display: flex;
     flex-direction: column;
