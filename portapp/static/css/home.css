@@ -125,6 +125,7 @@ body{
     background-color: rgba(244, 236, 223, 0.253);
     z-index: 1;
     padding-inline-start: 0.8%;
+    padding-inline-end: 0.5%;
     overflow: auto;
     display: flex;
     flex-direction: column;
