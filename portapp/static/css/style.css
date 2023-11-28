@@ -339,7 +339,7 @@ body{
 
 .div-descricao-section p{
     font-size: 17px;
-    max-width: 50%;
+    max-width: 70%;
 }
 
 .section-form{
@@ -352,6 +352,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 10px;
 }
 .section-form form{
     flex: 8;
