@@ -357,6 +357,7 @@ body {
   width: 60%;
   align-items: center;
 }
+
 ul.messages {
   list-style: none; /* Remove os marcadores da lista */
   padding: 0; /* Remove o padding padrão */
