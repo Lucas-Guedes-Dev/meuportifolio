@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-+rh@1*#bk+k1a_vl4$&+s0p=80+km@o*u*8$-r-5riw$x9ph$k
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['192.168.0.93']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -76,13 +76,13 @@ WSGI_APPLICATION = 'portifolio.wsgi.application'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
 DATABASES = {
-   'default': {
+    'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'portifolio',
         'USER': 'postgres',
-        'PASSWORD': 'postgres',
+        'PASSWORD': '2112',
         'HOST': 'localhost',
-        'PORT': '5432',
+        'PORT': '5433',
     }
 }
 
