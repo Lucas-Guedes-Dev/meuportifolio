@@ -72,7 +72,7 @@ body {
 
 .body-scroll {
   position: absolute;
-  top: 38%;
+  top: 15%;
   left: 0;
   width: 100%;
   height: 85vh;
@@ -109,7 +109,7 @@ body {
 /*  div inicial */
 
 .div-init {
-  height: 100%;
+  height: 78vh;
   width: 100%;
   display: flex;
 }
@@ -123,6 +123,7 @@ body {
   border-radius: 8px;
   box-shadow: 2px 2px 4px 4px rgba(0, 0, 0, 0.245);
   background-color: #f4ecdf41;
+  z-index: 1;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -461,7 +462,6 @@ ul.messages li.success {
   .retangulo-foto {
     display: none;
   }
-
   .navbar {
     flex-direction: column;
     height: auto;
@@ -494,8 +494,10 @@ ul.messages li.success {
     width: 40px;
     height: 40px;
   }
-
   .image-logo {
     display: none;
+  }
+  .body-scroll {
+    top: 17%;
   }
 }
