@@ -16,6 +16,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 20% !important;
 }
 
 .navbar-item-esquerda {
@@ -49,6 +50,7 @@ body {
 .button-navbar {
   flex: 1;
   height: 100%;
+  width: 100%;
   background-color: transparent;
   border-width: 0;
   color: white;
@@ -72,7 +74,7 @@ body {
 
 .body-scroll {
   position: absolute;
-  top: 15%;
+  top: 20%;
   left: 0;
   width: 100%;
   height: 85vh;
@@ -466,6 +468,7 @@ ul.messages li.success {
     flex-direction: column;
     height: auto;
     justify-content: center;
+    height: 18%;
   }
 
   .navbar-item-esquerda,
@@ -484,6 +487,7 @@ ul.messages li.success {
     flex: none;
     padding: 10px 0;
     font-size: 16px;
+    height: auto;
   }
 
   .button-icones {
@@ -499,5 +503,9 @@ ul.messages li.success {
   }
   .body-scroll {
     top: 17%;
+  }
+
+  .body-scroll {
+    top: 20%;
   }
 }
