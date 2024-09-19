@@ -113,4 +113,102 @@
   </body>
   {% block scripts %}{% endblock %}
   <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  <script>
+    function showDetails(eventId = 0) {
+      const detailsText = document.getElementById("details-text");
+
+      if (eventId === 1) {
+        detailsText.innerHTML = `
+          <div class="description">
+            <p>Responsável pela criação e otimização de consultas no SQL Server
+              para apoiar a aplicação de controle de estoque. Desenvolvi uma 
+              aplicação intuitiva com Python e Qt Designer para gerenciar 
+              inventário, rastrear produtos e gerar relatórios. A função é 
+              presencial e exige colaboração direta com a equipe para integrar o
+              banco de dados e a interface da aplicação.</p>
+        </div>
+
+        <div class="skills">
+            <p><strong>Habilidades Adquiridas:</strong></p>
+            <ul>
+                <li><strong>SQL Server:</strong> Criação e otimização de consultas, design de banco de dados, manutenção e administração de dados.</li>
+                <li><strong>Python:</strong> Desenvolvimento de scripts e automação, integração com APIs e bibliotecas.</li>
+                <li><strong>Qt Designer:</strong> Design e desenvolvimento de interfaces gráficas, criação de aplicações desktop com interface amigável.</li>
+            </ul>
+        </div>`;
+      } else if (eventId === 2) {
+        detailsText.innerHTML = `
+          <div class="description">
+            <p>Responsável pela sustentação e melhorias no sistema Cavok, 
+              atuando presencialmente na modalidade CLT. Envolve implementar
+              novas funcionalidades, corrigir problemas e otimizar o sistema
+              para melhorar a performance e atender às necessidades da empresa.</p>
+          </div>
+
+          <div class="skills">
+              <p><strong>Habilidades Adquiridas:</strong></p>
+              <ul>
+                <li><strong>Python:</strong> Desenvolvimento de aplicações e scripts, automação de processos.</li>
+                <li><strong>Django:</strong> Criação e manutenção de aplicações web, gerenciamento de banco de dados e desenvolvimento de funcionalidades.</li>
+                <li><strong>PostgreSQL:</strong> Design e gerenciamento de banco de dados, otimização de consultas e manutenção de dados.</li>
+                <li><strong>HTML:</strong> Estruturação e desenvolvimento de páginas web.</li>
+                <li><strong>CSS:</strong> Estilização de páginas web, criação de layouts responsivos.</li>
+                <li><strong>JavaScript:</strong> Desenvolvimento de interatividade em páginas web, manipulação do DOM e integração com APIs.</li>
+            </ul>
+          </div>`;
+      } else if (eventId === 3) {
+        detailsText.innerHTML = `
+          <div class="description">
+            <p>Responsável pelo desenvolvimento do sistema Seal, que integra a placa BeagleBone com a API do sistema. A função é presencial e na modalidade CLT.</p>
+          </div>
+
+          <div class="skills">
+              <p><strong>Habilidades Adquiridas:</strong></p>
+              <ul>
+                  <li><strong>Python:</strong> Desenvolvimento de aplicações e scripts, integração com APIs.</li>
+                  <li><strong>Django:</strong> Criação e manutenção de aplicações web.</li>
+                  <li><strong>PostgreSQL:</strong> Design e gerenciamento de banco de dados, otimização de consultas.</li>
+                  <li><strong>BeagleBone:</strong> Desenvolvimento e integração com placas BeagleBone.</li>
+                  <li><strong>Flask:</strong> Criação de APIs e microserviços.</li>
+                  <li><strong>Google Cloud:</strong> Utilização de serviços em nuvem para desenvolvimento e implantação.</li>
+              </ul>
+          </div>`;
+      } else if (eventId === 4) {
+        detailsText.innerHTML = `
+        <div class="description">
+            <p>Fiz parte da equipe de sustentação e melhorias do sistema Autosystem. A função foi presencial e na modalidade CLT.</p>
+        </div>
+
+        <div class="skills">
+            <p><strong>Habilidades Adquiridas:</strong></p>
+            <ul>
+                <li><strong>Python:</strong> Desenvolvimento de aplicações e scripts, integração com APIs.</li>
+                <li><strong>PostgreSQL:</strong> Design e gerenciamento de banco de dados, otimização de consultas.</li>
+                <li><strong>Servidores Locais:</strong> Administração e manutenção de servidores locais.</li>
+                <li><strong>React:</strong> Desenvolvimento de interfaces de usuário em aplicações web.</li>
+                <li><strong>React Native:</strong> Desenvolvimento de aplicações móveis nativas.</li>
+                <li><strong>Entre Outros:</strong> Experiência com diversas tecnologias e ferramentas adicionais.</li>
+            </ul>
+        </div>`;
+      } else if (eventId === 5) {
+        detailsText.innerHTML = `<div class="description">
+            <p>Faço parte da equipe de desenvolvimento de novas soluções para o mercado. A função é na modalidade PJ.</p>
+        </div>
+
+        <div class="skills">
+            <p><strong>Habilidades Adquiridas:</strong></p>
+            <ul>
+                <li><strong>.NET:</strong> Desenvolvimento de aplicações com o framework .NET.</li>
+                <li><strong>React:</strong> Desenvolvimento de interfaces de usuário para aplicações web.</li>
+                <li><strong>React Native:</strong> Desenvolvimento de aplicações móveis nativas.</li>
+                <li><strong>Electron:</strong> Criação de aplicações desktop multiplataforma.</li>
+                <li><strong>Python:</strong> Desenvolvimento de aplicações e scripts, integração com APIs.</li>
+                <li><strong>PostgreSQL:</strong> Design e gerenciamento de banco de dados, otimização de consultas.</li>
+                <li><strong>RavenDB:</strong> Gerenciamento e desenvolvimento com banco de dados NoSQL RavenDB.</li>
+                <li><strong>Entre Outros:</strong> Experiência com diversas tecnologias e ferramentas adicionais.</li>
+            </ul>
+        </div>`;
+      }
+    }
+  </script>
 </html>
