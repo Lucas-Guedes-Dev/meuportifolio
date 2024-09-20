@@ -79,7 +79,7 @@ body {
   height: 90vh;
   overflow-y: auto;
   overflow-x: hidden;
-  background-image: url("../images/background.jpg");
+  background-image: url("../images/fundo-inicio.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -135,33 +135,14 @@ body {
   flex: 1;
   color: rgb(255, 255, 255);
   display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  text-align: left;
+  max-width: 40%;
+  padding-left: 50px;
 }
 
-.div-init-info-corpo {
-  flex: 3;
-  padding: 10px;
-}
-
-.div-init-info-corpo p {
-  color: rgb(255, 255, 255);
-}
-
-.div-init-info h1 {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  color: rgb(255, 255, 255);
-  font-size: xx-large;
-}
-
-.div-init-info p {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  font-size: large;
-  font-weight: normal;
-}
 /* carousel */
 
 .content-carousel {
@@ -512,6 +493,7 @@ ul.messages li.success {
 
 .details-container {
   width: 70%;
+  height: 100%;
 }
 
 .details {
